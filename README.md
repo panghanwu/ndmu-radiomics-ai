@@ -5,7 +5,7 @@
 
 **環境怎麼裝**：`pip install -r requirements.txt`
 
-**資料放哪**：資料存放於地端，不公開；路徑設定於 `.env`，真實資料與 `.env` 不進 Git
+**資料放哪**：資料存放於地端，不公開，路徑設定於 `.env`；影像經去識別化後以代號（如 SUB001）命名，代號與病歷號的對照表獨立加密存放，不與影像放在同一目錄；真實資料、對照表與 `.env` 皆不進 Git
 
 **程式什麼順序跑**：`notebooks/01_preprocess_mammo.ipynb` → `02_extract_features.ipynb` → `03_model.ipynb`
 
